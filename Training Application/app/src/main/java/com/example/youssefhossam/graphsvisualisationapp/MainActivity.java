@@ -106,7 +106,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             public void onClick(View view) {
                 Toast V=Toast.makeText(MainActivity.this,"Press Mode Button Clicked",Toast.LENGTH_SHORT);
               V.show();
-
+                Intent myIntent = new Intent(getApplicationContext(), PressMode.class);
+                startActivity(myIntent);
             }
         });
 
@@ -324,48 +325,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         isVoiceActivityDone=true;
     }
-    public void switchModeClick(View v) throws InterruptedException {
-   BackgroundWorker backgroundWorker=new BackgroundWorker(this);
-       // backgroundWorker.execute("Hi","Hi","Hi");
-            isSpeechMode=!isSpeechMode;
-        if(isSpeechMode)
-        {
-            matabButton.setVisibility(View.INVISIBLE);
-            hofraButton.setVisibility(View.INVISIBLE);
-            takserButton.setVisibility(View.INVISIBLE);
-            ghlatButton.setVisibility(View.INVISIBLE);
-            harakaButton.setVisibility(View.INVISIBLE);
-        }
-        else
-        {
-            matabButton.setVisibility(View.VISIBLE);
-            hofraButton.setVisibility(View.VISIBLE);
-            takserButton.setVisibility(View.VISIBLE);
-            ghlatButton.setVisibility(View.VISIBLE);
-            harakaButton.setVisibility(View.VISIBLE);
-        }
-
-    }
-    public void matabClick(View v) {
-        isMatabPressed=true;
-    }
 
 
-    public void hofraClick(View v) {
-        isHofraPressed=true;
-    }
-
-    public void takserClick(View v) {
-        isTakserPressed=true;
-    }
-
-    public void ghlatClick(View v) {
-        isGhlatPressed=true;
-    }
-
-    public void harakaClick(View v) {
-        isHarakaPressed=true;
-    }
 
 }
 

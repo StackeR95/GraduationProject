@@ -15,82 +15,8 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-        <Button
-            android:id="@+id/buttonMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="88dp"
-            android:elevation="0dp"
-            android:onClick="switchModeClick"
-            android:text="Switch Mode" />
-
-        <Button
-            android:id="@+id/buttonMatab"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/buttonMode"
-            android:layout_marginTop="122dp"
-            android:onClick="matabClick"
-            android:text="Matab"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/buttonHofra"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/buttonMatab"
-            android:layout_toEndOf="@+id/buttonMode"
-            android:onClick="hofraClick"
-            android:text="Hofra"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/buttonTakser"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="54dp"
-            android:layout_toStartOf="@+id/buttonMode"
-            android:onClick="takserClick"
-            android:text="Takser"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/buttonGhlat"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/buttonTakser"
-            android:layout_alignStart="@+id/buttonHofra"
-            android:onClick="ghlatClick"
-            android:text="ghlat"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/buttonHaraka"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonGhlat"
-            android:layout_alignEnd="@+id/buttonMode"
-            android:onClick="harakaClick"
-            android:text="Haraka" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonHofra"
-            android:layout_alignStart="@+id/buttonTakser"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

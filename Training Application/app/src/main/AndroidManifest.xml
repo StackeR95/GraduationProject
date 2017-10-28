@@ -13,16 +13,18 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".VoiceMode">
             <intent-filter>
                 <action android:name="com.example.youssefhossam.graphsvisualisationapp.VoiceMode" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".PressMode"></activity>
     </application>
 
 </manifest>
